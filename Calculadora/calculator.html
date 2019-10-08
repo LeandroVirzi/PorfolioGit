@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Calculator</h1>
+<p class="warning">Don't divide by zero</p>
+
+<div id="calculator" class="calculator">
+
+  <button id="clear" class="clear" onclick="operaciones('C')">C</button>
+
+  <div id="viewer" class="viewer">0</div>
+
+  <button class="num" data-num="7" onclick="presionaBoton('7')">7</button>
+  <button class="num" data-num="8" onclick="presionaBoton('8')">8</button>
+  <button class="num" data-num="9" onclick="presionaBoton('9')">9</button>
+  <button data-ops="plus" class="ops" onclick="operaciones('+')">+</button>
+
+  <button class="num" data-num="4" onclick="presionaBoton('4')">4</button>
+  <button class="num" data-num="5" onclick="presionaBoton('5')">5</button>
+  <button class="num" data-num="6" onclick="presionaBoton('6')">6</button>
+  <button data-ops="minus" class="ops" onclick="operaciones('-')">-</button>
+
+  <button class="num" data-num="1" onclick="presionaBoton('1')">1</button>
+  <button class="num" data-num="2" onclick="presionaBoton('2')">2</button>
+  <button class="num" data-num="3" onclick="presionaBoton('3')">3</button>
+  <button data-ops="times" class="ops" onclick="operaciones('*')">*</button>
+
+  <button class="num" data-num="0" onclick="presionaBoton('0')">0</button>
+  <button class="num" data-num="." onclick="presionaBoton('.')">.</button>
+  <button id="equals" class="equals" data-result="" onclick="operaciones('=')" >=</button>
+  <button data-ops="divided by" class="ops" onclick="operaciones('/')">/</button>
+</div>
+
+<script>
+  let numeroA= document.getElementsByClassName("num");
+  console.log(numeroA);
+  var f;
+  //--------------
+  
+  let parcial="";
+  function presionaBoton (valor){
+    parcial +=valor;
+    //parcial se va a repetir siempe, innerhtml hace que se muestre parcial en el viewer.
+    document.getElementById("viewer").innerHTML=parcial;
+  }
+  
+  var total=''
+  let operador="";
+  function operaciones (op){
+    //si presiona C limpia la pantalla.
+    if (operador =='C')
+      {
+        let cero = "0";
+        parcial = cero;
+        document.getElementById("viewer").innerHTML=parcial;
+      }
+          
+    if (op == '=')
+    {
+      if (operador == '+')
+      {
+        parcial = parseFloat(parcial) + parseFloat(total);
+      }
+      if (operador == '-')
+      {
+        parcial = parseFloat(total) - parseFloat(parcial);
+      }
+      if (operador == '*')
+      {
+        parcial = parseFloat(parcial) * parseFloat(total);
+      }
+      if (operador == '/')
+      {
+
+        parcial = parseFloat(total) / parseFloat(parcial);
+        
+      }
+    }
+    document.getElementById('viewer').innerHTML=parcial;
+    total=parcial;
+    parcial='';
+    operador=op;
+    
+  }
+  
+  
+</script>
+
+<button id="reset" class="reset">Reset Universe?</button>
+</body>
+</html>
