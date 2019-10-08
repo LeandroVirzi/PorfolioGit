@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/cv.css"><!-- css -->
+    <link rel="stylesheet" type="text/css" href="./iconos/fonts.css"><!-- css barra redes -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"><!-- fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leandro Virzi</title>
+</head>
+<body>
+    
+    <div class="social">
+        <!-- creo una lista con elementos li -->
+        <ul>
+            <!-- dentro de la class va icon-nombre del iciono. -->
+            <li><a href="https://mail.google.com" class="icon-mail4"></a></li>
+            <li><a href="https://www.linkedin.com/in/leandro-virzi-b965a7154/" class="icon-linkedin"></a></li>
+            <li><a href="https://hangouts.google.com/?hl=es-419&authuser=1" class="icon-hangouts"></a></li>
+            <li><a href="https://github.com/LeandroVirzi" class="icon-github"></a></li>
+            <li><a href="https://www.skype.com/es/" class="icon-skype"></a></li>
+        </ul>
+    </div>
+<!-- contenedor de la pagina, todo esta dentro de este contenedor -->
+    <div class="contenedor">
+        
+
+    <!-- CONTENEDOR IZQUIERDO de la pagina -->
+        <div class="bloqueIzquierdo">
+            
+        <!-- contiene imagen de perfil y el nombre de la persona y del titulo -->
+            <div class="contenedorImgNombre">
+            <!-- contenedor de IMAGEN DEL PERFIL -->
+                <div class="imgPerfil">
+                    <img src="foto cv.jpg" alt="" id="img_perfil">
+                </div>
+            <!-- contenedor de NOMBRE PERFIL -->
+                <div class="nombrePerfil"> <p id="tituloBajoFoto"> LEANDRO VIRZI </p></div>
+            <!-- contenedor de TITULO DEL PERFIL desarrolloweb full stack -->
+                <div class="carreraPerfil"> <p id="subTituloPerfil"> DESARROLLADOR WEB FULL STACK </p> </div>
+            </div>
+
+        <!-- contenedor de INFORMACION PERSONAL DE CONTACTO -->
+            <div class="infoPerfil">
+            <!-- direccion de la persona -->
+                <div class="tituloPerfil"> Direccion: </div>
+            <!-- texto de la direccion  -->
+                <div class="textoPerfil"> Sargento Cabral Nro. 3450, Canning, Buenos Aires, Argentina. </div>
+            <!-- fecha de nacimiento de la persona -->
+                <div class="tituloPerfil"> Nacimiento: </div>
+            <!-- texto nacimiento fecha -->
+                <div class="textoPerfil"> 31 Mayo 1999 </div>
+            <!-- numeto de telefono -->
+                <div class="tituloPerfil"> Telefono: </div>
+            <!-- numero -->
+                <div class="textoPerfil"> +549 11 2649 8152 </div>
+            <!-- email -->
+                <div class="tituloPerfil"> Email: </div>
+            <!-- texto email -->
+                <div class="textoPerfil">  leandro.m.virzi@gmail.com </div>
+            </div>
+
+        <!-- contenedor de FORMULARIO DE CONTACTO -->
+            <div class="formularioContacto">
+            <!-- titulo de informacion de contacto -->
+                <div class="tituloContacto">
+                    ¡Puedes dejarme un mensaje para que te contacte!
+                </div>
+                <form action="formulario_contactos">
+                <!-- Nombre -->
+                    <label for="nombre" id="tituloInput"> Nombre: </label><br>
+                    <input type="text" id="nombre" class="form" id="inputContactos"><br>
+                <!-- Apellido -->
+                    <label for="apellido" id="tituloInput"> Apellido: </label><br>
+                    <input type="text" id="apellido" class="form" id="inputContactos"><br>
+                <!-- Telefono -->
+                    <label for="telefono" id="tituloInput"> Telefono: </label><br>
+                    <input type="text" id="telefono" class="form" id="inputContactos"><br>
+                <!-- Email -->
+                    <label for="email" id="tituloInput"> Email: </label><br>
+                    <input type="email" name="" id="email" class="form" id="inputContactos"><br>
+                <!-- Mensaje -->
+                    <label for="mensaje" id="tituloInput"> Mensaje: </label><br>
+                    <input type="text" name="" id="mensaje" class="form" id="inputContactos"><br>
+                <!-- Boton Enviar -->
+                    <input type="button" value="Enviar" id="enviar">
+                </form>
+                <!-- aqui el formulario de contacto para ser contactado el interesado. -->
+            </div>
+        </div>
+
+    <!-- contenido derecho de la pagina -->
+        <div class="bloqueDerecho">
+        <!-- titulo principal del bloque derecho -->
+            <div class="tituloDelContenedor" id="titulos">Acerca de mi</div>
+        <!-- titulo del bloque derecho -->
+            <div class="contenedorInfo">
+            <!-- texto dentro de titulo del bloque derechos -->
+                <div class="textoBloqueDer"><!-- aca va el texto --></div>
+            </div>
+
+        <!-- CHAMUYO -->
+            <div class="contenedorInfo">
+            <!-- texto del chamuyo -->
+                <div class="textoInfo">
+                    <p>
+                        Me interesa trabajar en el ámbito tecnológico para lo que me he estado formando
+                        estos últimos años al realizar mi preparación técnica y universitaria.
+                        Aplicando todos estos conocimientos en mi nuevo puesto para lograr el cumplimiento 
+                        satisfactorio de las metas que me asignen y mi desarrollo personal.
+                    </p>          
+                </div>
+            </div>
+        <!-- HABILIDADES TECNICAS -->
+            <div class="contenedorInfo"></div>
+
+        <!-- EXPERIENCIA LABORAL -->
+            <div class="tituloPrincipalExperienciaLaboral" id="titulos">Experiencia Laboral</div>
+
+            <div class="contenedorInfo"><!-- Santander. -->
+            <!-- fecha -->
+                <div class="fechaInfo"> Marzo - 2019 - Actualidad </div>
+            <!-- texto de con la informacion -->
+                <div class="textoInfo">
+                <!-- titulo -->
+                    <div class="tituloExperienciaLaboral">Santander Tecnologia</div><!-- Empresa -->
+                    <div class="subTituloExperienciaLaboral">Analista / Soporte / Implementaciones</div><!-- Puesto -->
+                <!-- Descripcion del trabajo -->
+                    <div class="textoExperienciaLaboral">
+                        <p>
+                            Soporte del aplicativo Thuban. 
+                            Implementación y seguimiento de proyectos del cliente. 
+                            Gestión de incidentes y nuevos requerimientos. 
+                            Capacitación de los clientes para la utilización correcta del sistema.
+                        </p>
+                    </div>                    
+
+                </div>
+            </div>
+
+            <div class="contenedorInfo">
+            <!-- fecha -->
+                <div class="fechaInfo"> Octubre - 2018 - Actualidad </div>
+            <!-- texto de con la informacion -->
+                <div class="textoInfo">
+                <!-- titulo -->
+                    <div class="tituloExperienciaLaboral">Vivatia</div><!-- Empresa -->
+                    <div class="subTituloExperienciaLaboral">Soporte de Sistemas / Implementaciones</div><!-- Puesto -->
+                <!-- Descripcion del trabajo. -->
+                    <div class="textoExperienciaLaboral">
+                        <p>
+                            Encargado del Soporte y solución de los sistemas de la entidad. Estos se encargan de manejar documentación así como la digitalización de la misma.
+                            Generación de Informes de avance para el cliente y reportes de estado de la documentación por medio de Base de datos - VPN - Escritorio remoto.
+                            Implementación y seguimiento de proyectos en clientes del sector bancario y financiero. 
+                            Gestión de incidentes y nuevos requerimientos. 
+                            Capacitación de los clientes para la utilización correcta del sistema.
+                        </p> 
+                    </div>
+                </div>
+            </div>
+
+        <!-- ESTUDIOS -->
+            <div class="tituloPrincipalEstudios" id="titulos">Estudios</div>
+
+            <div class="contenedorInfo">
+            <!-- fecha -->
+                <div class="fechaInfo"> 2019 - 2020 </div>
+            <!-- texto de con la informacion -->
+                <div class="textoInfo">
+                <!-- titulo -->
+                    <div class="tituloEstudios">Acámica</div>
+                    <div class="subTituloEstudios">Desarrollo Web Full Stack, Desarrollo de aplicaciones web</div>
+                <!-- estudios decripcion -->
+                    <div class="textoEstudios">
+                        <p>
+                            Actividades y asociaciones: Aprendiendo mediante el desarrollo de pequeños proyectos personales, los cuales, una vez terminados se podrán ver en mi porfolio de Github.
+                        </p>
+                    </div>
+                    <div class="aprendizajes">
+                        Aprendizajes: <br> 
+                        <p> 
+                            HTML5, CSS, JavaScript, Git, jQuery, Canvas, protocolo HTTP, APls REST, Node.js, Express, MySQL y Docker.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedorInfo">
+            <!-- fecha -->
+                <div class="fechaInfo"> 2018 - 2020 </div>
+            <!-- texto de con la informacion -->
+                <div class="textoInfo">
+                    <div class="tituloEstudios">UADE</div>
+                    <div class="subTituloEstudios">Tecnicatura en Desarrollo de Software</div>
+                </div>
+            </div>
+
+            <div class="contenedorInfo">
+            <!-- fecha -->
+                <div class="fechaInfo"> 2016 - 2018 </div>
+            <!-- texto de la informacion -->
+                <div class="textoInfo">
+                    <div class="tituloEstudios">Educación IT</div>
+                    <div class="subTituloEstudios">Carrera Java</div>
+                </div>
+            </div>
+
+            <div class="contenedorInfo">
+            <!-- fecha -->
+                <div class="fechaInfo"> 2011 - 2016 </div>
+            <!-- texto de la informacion -->
+                <div class="textoInfo">
+                    <div class="tituloEstudios">C.E.N.T Complejo Educativo Nuestra Tierra</div>
+                    <div class="subTituloEstudios">Bachiller en Economia y Administración</div>
+                </div>
+            </div>            
+
+        <!-- IDIOMAS ENTRE OTROS -->
+            <div class="contenedorInfo">
+            <!-- texto con la informacion de los idiomas -->
+                <div class="textoInfo"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

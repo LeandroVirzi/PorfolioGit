@@ -1,0 +1,198 @@
+/*menu redes*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.social {
+    position: fixed;/*iconos pegados en pantalla*/
+    left: 0;/*barra se aplique a la izaquierda*/
+    top: 200px;/*variar*/
+    z-index: 2000;/*siempre sobre todos los elementos de la pagina*/
+
+}
+
+.social ul {
+    list-style: none;/*deje de ver como lista*/
+}
+
+.social ul li a {
+    display: inline-block;/*para agregar un pading hay que hacerlos elementos de bloque enlinea*/
+    color: #ffffff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;/*quitamos el decorado*/
+    -webkit-transition:all 500ms ease ;
+    -o-transition:all 500ms ease ;
+    transition:all 500ms ease;
+}
+
+/*colores de los botones*/
+.social ul li .icon-mail4 {
+    background: #d7473b;
+}
+.social ul li .icon-linkedin {
+    background: #00669c;
+}
+.social ul li .icon-hangouts {
+    background: #129e59;
+}
+.social ul li .icon-github {
+    
+}
+.social ul li .icon-skype {
+    background: #00a9e8;
+}
+
+/*despliegue hacia el costados*/
+.social ul li a:hover {
+    padding: 10px 30px;/*de arriba y debajo 10px hacia los costados 30.*/
+    background: #000;
+}
+/*
+.bloqueIzquierdo {
+    display: block;
+    position: relative;
+    left: 0px;
+    color: white;
+}
+*/
+
+
+
+/* PAGINA */
+
+#titulos {
+    font-size: 20px;
+    padding: 10px;
+}
+.contenedor {
+    padding: 60px;
+    min-width: 960px;/*ancho*/
+    min-height: 500px;/*minimo de alto*/
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+}
+
+body {
+    background: white;    
+    color: black;
+}
+
+
+
+/* DIV GENERALES DE INFORMACION */
+.contenedorInfo {
+    margin: 25px;
+}
+
+.fechaInfo {
+    display: inline-block;
+
+}
+.textoInfo {
+    display: inline-block;
+
+}
+.textoInfo p {
+    color: #8594b8;
+}
+
+
+/* BLOQUE DERECHO */
+.bloqueDerecho {
+    width: 820px;
+    display: inline-block;
+    min-height: 1200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2%;
+    right: 0px;
+}
+
+
+/* BLOQUE IZQUIERDO */
+.bloqueIzquierdo {
+    width: 480px;
+    height: 1200px;
+    display: inline-block;
+    background: #425370;
+    color: #ffffff;
+    position:relative;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+#subTituloPerfil {
+    font-size: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#tituloBajoFoto {
+    font-size: 45px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#img_perfil {
+    margin: 10%;
+    width: 380px;
+    border-radius: 65%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contenedorImgNombre {
+    text-align: center;
+}
+.contenedorImgNombre .nombrePerfil {
+    margin: 10px;
+}
+.contenedorImgNombre .carreraPerfil {
+    margin: 10px;
+}
+
+/*#8594b8*//*color de las letras*/
+
+
+/*FORMULARIO DE CONTACTO*/
+.formularioContacto {
+    margin: 10px;
+    
+}
+
+.infoPerfil {
+    margin: 10px;
+}
+#inputContactos {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#tituloInput {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#nombre {
+    width: 460px;
+    height: 25px;
+}
+#apellido {
+    width: 460px;
+    height: 25px;
+}
+#telefono {
+    width: 460px;
+    height: 25px;
+}
+#email {
+    width: 460px;
+    height: 25px;
+}
+#mensaje {
+    width: 460px;
+    height: 60px;;
+}
+
+#enviar {
+    width: 460px;
+    height: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #425370;
+    color: #ffffff;
+}
+
