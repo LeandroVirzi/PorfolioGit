@@ -64,7 +64,7 @@ function extraerDinero() {
     }
 
     //validar billetes de 100.
-    while(extraer < 100 ){
+    while(extraer > 0 && extraer < 100 ){
         alert("El monto minimo es de $100");
         extraer = prompt("Ingrese 0 para salir. \n Ingrese nuevamente el monto: ");
         if (extraer == 0){
