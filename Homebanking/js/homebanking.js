@@ -27,41 +27,61 @@ function extraerDinero() {
     var saldoAnterior = saldoCuenta;//saldo inicial de la cuenta.
     var extraer = prompt("monto que quieres retirar: ");//extraer el dinero.
     var billetes_cien = 100;//validar que el monto pueda ser extraido en billetes de 100.
-    var limiteExtraccionDiaria = limiteExtraccion;//verificar que no supere el limite de extraccion diaria.
     
+    //validar que el monto pueda ser extraido en billetes de 100.
+    while (extraer % 100 > 0 ){
+        alert("El monto minimo es de $100");
+        extraer = prompt("Ingrese 0 para salir. \n Ingrese nuevamente el monto: ");
+        if (extraer == 0){
+            break;
+        }
+    }
+    
+    while (extraer > limiteExtraccion){
+        alert("Estas superando el limite diario: "+limiteExtraccion);
+        extraer = prompt("Ingrese 0 para salir. \n Ingrese nuevamente el monto: ");
+        if (extraer == 0){
+            break;
+        }
+    }
+
     //validar el saldo de la cuenta.
-    while(extraer > saldoCuenta){
+    while(extraer > saldoCuenta ){
         alert("El monto es mayor al Saldo de la cuenta. \n Saldo: " + saldoCuenta)
-        extraer = prompt("Ingrese nuevamente el monto: ")
+        extraer = prompt("Ingrese 0 para salir. \n Ingrese nuevamente el monto: ")
+        if (extraer == 0){
+            break;
+        }
     }
 
     //validar que no supere el limite de extraccion.
-    while(extraer > limiteExtraccion){
+    while(extraer > limiteExtraccion ){
         alert("El monto supera el limite de extraccion. \n Limite: "+limiteExtraccion);
-        extraer = prompt("Ingrese nuevamente el monto: ");
+        extraer = prompt("Ingrese 0 para salir. \n Ingrese nuevamente el monto: ");
+        if (extraer == 0){
+            break;
+        }
     }
 
     //validar billetes de 100.
-    while(extraer < 100){
+    while(extraer < 100 ){
         alert("El monto minimo es de $100");
-        extraer = prompt("Ingrese nuevamente el monto: ");
-    }
-
-    //validar que el monto pueda ser extraido en billetes de 100.
-    while (extraer % 100 > 0){
-        alert("El monto minimo es de $100");
-        extraer = prompt("Ingrese nuevamente el monto: ");
+        extraer = prompt("Ingrese 0 para salir. \n Ingrese nuevamente el monto: ");
+        if (extraer == 0){
+            break;
+        }
     }
 
     //validar que ccuando extrae dinero no supere el limite de extraccion diaria.
-    limiteExtraccionDiaria = limiteExtraccionDiaria - extraer;
+    limiteExtraccion = limiteExtraccion- extraer;
+    //alert("Limite de extraccion: "+limiteExtraccion+"\n Extraccion diaria: "+limiteExtraccionDiaria);
     
     
 
     
     //saldo de la cuenta actualizado.
     saldoCuenta = parseInt(saldoCuenta) - parseInt(extraer);//a extraer. 
-    alert("Has extraido: "+extraer + "\n Saldo anterior: "+saldoAnterior + "\n Saldo actual: "+saldoCuenta);//mensaje de saldo.
+    alert("Has extraido: "+extraer + "\n Saldo anterior: " +saldoAnterior+ "\n Saldo actual: " +saldoCuenta+ " Limite de extraccion: " +limiteExtraccion);//mensaje de saldo.
 }
 
 //sumar dinero a la cuenta.
