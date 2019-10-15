@@ -3,6 +3,7 @@ var nombreUsuario = 'LeandroVirzi';//nombre del usuario.
 var saldoCuenta = 30000;//saldo de la cuenta.
 var limiteExtraccion = 5000;//limite de extraccion.
 
+
 //Ejecución de las funciones que actualizan los valores de las variables en el HTML.
 //para que cargue primero el script
 window.onload = function() {
@@ -18,6 +19,8 @@ function cambiarLimiteDeExtraccion() {
     var nuevoLimite = prompt("Ingrese el nuevo limite de extraccion: ");
     limiteExtraccion = parseInt(nuevoLimite);//limite.
     //REVISAR
+    actualizarLimiteEnPantalla();
+    return limiteExtraccion;
 }
 
 
@@ -71,7 +74,7 @@ function extraerDinero() {
 }
     
 
-//sumar dinero a la cuenta.
+//SUMAR DINERO A LA CUENTA.
 function depositarDinero() {
     var saldoAnterior = saldoCuenta;//saldo inicial de la cuenta.
     var deposito = prompt("Ingrese el saldo del dinero a depositar: ");//toma el saldo a ingresar.
@@ -81,6 +84,8 @@ function depositarDinero() {
     actualizarLimiteEnPantalla();
 }
 
+
+//PAGAR SERVICIOS.
 function pagarServicio() {
     //variables.
     var agua = 350;//1
@@ -96,7 +101,6 @@ function pagarServicio() {
         let servicio = parseInt(servicioElegido);
         switch (servicio) {
             case 1:
-                alert("sasasd");
                 //debugger
                 realizarPagoServicio("Agua",agua);
                 break;
@@ -117,6 +121,8 @@ function pagarServicio() {
     
 }
 
+
+//REALIZAR PAGO DE SERVICIOS (funcion exclusiva para el PAGO DE SERVICIOS).
 function realizarPagoServicio(servicio,pagarServicio){
     //si tiene el saldo en la cuenta, haga lo siguiente.
     //debugger
@@ -130,12 +136,47 @@ function realizarPagoServicio(servicio,pagarServicio){
     actualizarSaldoEnPantalla();
 }
 
-function transferirDinero() {
 
+//TRANFERENCIA BANCARIA.
+function transferirDinero() {
+    //variables.
+    var cuentaAmigaUno = 1234567;//cuenta destino 1.
+    var cuentaAmigaDos = 7654321;//cuenta destino 2.
+    
+    
+    let montoTransferencia = prompt("Ingrese el monto a transferir: ");
+    if ( montoTransferencia > saldoCuenta) {
+        alert("No posee fondos suficientes.")
+    } else {
+        let cuentaAmiga = prompt("Ingrese número de la cuenta a transferir: ");
+        cuenta = parseInt(cuentaAmiga);
+        switch (cuenta){
+            case 1234567:
+                transferir("1234567",montoTransferencia);
+                break;
+            case 7654321:
+                transferir("7654321",montoTransferencia);
+                break;
+            default : alert("La cuenta ingresada, no pertenece a una cuenta amiga.");
+                break;
+        }
+    }
+    actualizarSaldoEnPantalla();
 }
 
-function iniciarSesion() {
+function transferir (cuentaAmiga,montoTransferencia) {
+    //variables.
+    let saldoAnterior = saldoCuenta;
+    //transaccion.
+    saldoCuenta = saldoCuenta - montoTransferencia;
+    alert("Número de cuenta: "+cuentaAmiga+"\nImporte: "+montoTransferencia+ "\nSaldo anterior: " +saldoAnterior+ "\nSaldo actual: " +saldoCuenta);//mensaje de saldo.
+    
+    actualizarSaldoEnPantalla();
+}
 
+
+function iniciarSesion() {
+    
 }
 
 //Funciones que actualizan el valor de las variables en el HTML
