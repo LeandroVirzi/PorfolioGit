@@ -7,6 +7,7 @@ var limiteExtraccion = 5000;//limite de extraccion.
 //Ejecución de las funciones que actualizan los valores de las variables en el HTML.
 //para que cargue primero el script
 window.onload = function() {
+    iniciarSesion();
     cargarNombreEnPantalla();
     actualizarSaldoEnPantalla();
     actualizarLimiteEnPantalla();
@@ -16,7 +17,7 @@ window.onload = function() {
 //Funciones que tenes que completar
 function cambiarLimiteDeExtraccion() {
     //cambiar limite de extraccion.
-    var nuevoLimite = prompt("Ingrese el nuevo limite de extraccion: ");
+    var nuevoLimite = prompt("Ingrese el nuevo limite de extracción: ");
     limiteExtraccion = parseInt(nuevoLimite);//limite.
     //REVISAR
     actualizarLimiteEnPantalla();
@@ -176,7 +177,24 @@ function transferir (cuentaAmiga,montoTransferencia) {
 
 
 function iniciarSesion() {
-    
+    //usuario original.
+    var usuario = "leandro virzi";
+    var pass = 1234567;
+    //usuario para comparar.
+    var nombreUsuario = prompt("Ingrese el usuario: ");
+    var claveUsuario = prompt("Ingrese la clave: ");
+
+    //validacion.
+    while (usuario != nombreUsuario && pass != claveUsuario){
+        /*alert("Datos de acceso incorrectos.")*/
+        alert("Usuario o Contraseña invalida.")
+        nombreUsuario=prompt("Ingrese nuevamente el usuario: ");
+        claveUsuario=prompt("Ingrese la clave nuevamente: ");
+    }
+    if (usuario == nombreUsuario && pass == claveUsuario){
+        //alerta que los datos son correctos.
+        alert("Hola "+nombreUsuario+" ya puedes utilizar el Homebanking");
+    }
 }
 
 //Funciones que actualizan el valor de las variables en el HTML
