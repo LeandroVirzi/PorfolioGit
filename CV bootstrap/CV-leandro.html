@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css/cv.css"><!-- css -->
+    <link rel="stylesheet" type="text/css" href="./iconos/fonts.css"><!-- css barra redes -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> <!-- fonts -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- para que sea mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leandro Virzi</title>
+</head>
+
+<body>
+    <!-- redes sociales -->
+    <div class="social">
+        <!-- creo una lista con elementos li -->
+        <ul>
+            <!-- dentro de la class va icon-nombre del iciono. -->
+            <li><a href="https://mail.google.com" class="icon-mail4"></a></li>
+            <li><a href="https://www.linkedin.com/in/leandro-virzi-b965a7154/" class="icon-linkedin"></a></li>
+            <li><a href="https://hangouts.google.com/?hl=es-419&authuser=1" class="icon-hangouts"></a></li>
+            <li><a href="https://github.com/LeandroVirzi" class="icon-github"></a></li>
+            <li><a href="https://www.skype.com/es/" class="icon-skype"></a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <!-- guia izquierda -->
+        <div class="row">
+            <!-- columnas -->
+            <div class="col">
+                <!-- fila -->
+                <img src="foto cv.jpg" class="rounded-circle shadow-lg mb-5 bg-white rounded" alt="Cinque Terre"><!-- foto -->
+                <!-- nombre / profesion -->
+                <h1>LEANDRO VIRZI</h1>
+                <h2>DESARROLLADOR</h2>
+                <!-- Informacion personal -->
+                <p>
+                    <h6>Direccion:</h6>Sargento Cabral Nro. 3450, Canning, Buenos Aires, Argentina. <br>
+                    <h6>Nacimiento: </h6> 31 Mayo 1999. <br>
+                    <h6>Telefono:</h6> +549 11 2649 8152 <br>
+                    <h6>Email:</h6> leandro.m.virzi@gmail.com <br>
+                </p>
+                <!-- formulario de contacto -->
+                <p>¡Puedes dejarme un mensaje para que te contacte!</p><br>
+                <div class="form-group">
+                    <!-- nombre -->
+                    <label for="nombre">Name:</label>
+                    <input type="text" class="form-control shadow-sm p-3 mb-5 bg-white rounded" id="nombre">
+                    <!-- apellido -->
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" class="form-control shadow-sm p-3 mb-5 bg-white rounded" id="apellido">
+                    <!-- telefono -->
+                    <label for="tel">Telefono:</label>
+                    <input type="text" class="form-control shadow-sm p-3 mb-5 bg-white rounded" id="tel">
+                    <!-- correo -->
+                    <label for="mail">Mail:</label>
+                    <div class="input-group mb-3 shadow-sm mb-5 bg-white rounded" >
+                        <input type="text" class="form-control " placeholder="Your Email" id="mail">
+                        <div class="input-group-append">
+                            <span class="input-group-text">@example.com</span>
+                        </div>
+                    </div>
+                    <!-- texto mensaje del contacto -->
+                    <div class="form-group">
+                        <label for="comment">Tu Mensaje:</label>
+                        <textarea class="form-control shadow-sm p-3 mb-5 bg-white rounded " rows="5" id="comment"></textarea>
+                        <button type="button" class="btn btn-light shadow p-3 mb-5 bg-white rounded" id="boton">Enviar</button><!-- boton enviar -->
+                    </div>
+                </div>
+                
+            </div><!-- fila -->
+
+            <div class="col" id="infoGeneral">
+                <div class="col">
+                    <!-- col -->
+                    <h4>Acerca de mi </h4><br>
+                    <p>
+                        Me interesa trabajar en el ámbito tecnológico para lo que me he estado formando estos últimos
+                        años al realizar mi preparación técnica y universitaria. Aplicando todos estos conocimientos en
+                        mi nuevo puesto para lograr el cumplimiento satisfactorio de las metas que me asignen y mi
+                        desarrollo personal.
+                    </p>
+                </div>
+                <div class="col">
+                    <h4>Experiencia laboral</h4><br>
+                        <!-- santander -->
+                    <p>
+                        Marzo - 2019 - Actualidad <br> Santander Tecnologia <br> Analista / Soporte / Implementaciones
+                        <br>
+                        Soporte del aplicativo Thuban. Implementación y seguimiento de proyectos del cliente. Gestión de
+                        incidentes y nuevos requerimientos. Capacitación de los clientes para la utilización correcta
+                        del sistema.
+                    </p>
+                </div>
+                <div class="col">
+                    <!-- vivatia -->
+                    <p>
+                        Octubre - 2018 - Actualidad <br> Vivatia <br> Soporte de Sistemas / Implementaciones
+                        Encargado del Soporte y solución de los sistemas de la entidad. Estos se encargan de manejar
+                        documentación así como la digitalización de la misma. Generación de Informes de avance para el
+                        cliente y reportes de estado de la documentación por medio de Base de datos - VPN - Escritorio
+                        remoto. Implementación y seguimiento de proyectos en clientes del sector bancario y financiero.
+                        Gestión de incidentes y nuevos requerimientos. Capacitación de los clientes para la utilización
+                        correcta del sistema.
+                    </p>
+                </div>
+                <div class="col">
+                    <h4>Estudios </h4><br> 
+                    <!-- acamica -->
+                    <p>
+                        2019 - 2020 <br>Acámica <br> Desarrollo Web Full Stack, Desarrollo de aplicaciones web <br>
+                        Actividades y asociaciones: Aprendiendo mediante el desarrollo de pequeños proyectos personales, los cuales, una vez terminados se podrán ver en mi porfolio de Github. <br>
+                        Aprendizajes: <br>
+                        HTML5, CSS, JavaScript, Git, jQuery, Canvas, protocolo HTTP, APls REST, Node.js, Express, MySQL y Docker.
+                    </p>
+                    <!-- uade -->
+                    <p>
+                        2018 - 2020 <br>Uade <br> Tecnicatura en Desarrollo de Software
+                    </p>
+                    <!-- educacion it -->
+                    <p>
+                        2016 - 2018 <br> Educación IT <br> Carrera Java
+                    </p>
+                    <!-- cent -->
+                    <p>
+                        2011 - 2016 <br> C.E.N.T Complejo Educativo Nuestra Tierra <br> Bachiller en Economia y Administración
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        ¡Busco trabajo por Buenos Aires!
+                    </p>
+                    <iframe class="shadow-none p-3 mb-5 bg-light rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.39707532423!2d-58.57338494756603!3d-34.615461116377574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1576193637760!5m2!1ses-419!2sar" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    //mensaje en contaco del usuario.
+    $('#boton').click(function(){
+        alert("¡Mensaje enviado correctamente!");
+    });
+</script>
+
+</html>
