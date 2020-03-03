@@ -1,3 +1,25 @@
+/* PAGINA */
+body {
+    background: white;    
+    color: black;
+}
+
+#titulos {
+    font-size: 20px;
+    padding: 10px;
+}
+.contenedor {
+    padding: 60px;
+    min-width: 960px;/*ancho*/
+    min-height: 500px;/*minimo de alto*/
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+}
+
+
+
+
+
 /*menu redes*/
 *{
     margin: 0;
@@ -62,24 +84,6 @@
 
 
 
-/* PAGINA */
-
-#titulos {
-    font-size: 20px;
-    padding: 10px;
-}
-.contenedor {
-    padding: 60px;
-    min-width: 960px;/*ancho*/
-    min-height: 500px;/*minimo de alto*/
-    font-family: 'Quicksand', sans-serif;
-    font-size: 17px;
-}
-
-body {
-    background: white;    
-    color: black;
-}
 
 
 
