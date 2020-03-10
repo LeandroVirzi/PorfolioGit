@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BMO Arcade</title>
+    <link rel="stylesheet" href="css/juego.css">
+  </head>
+  <body>
+    <div class="col-40"><!-- columna que ocupa el 40% -->
+      <!-- instrucciones - objetivo - ultimo-mov -->
+      <div id="titulo">
+        <h1>Rompecabezas</h1>
+      </div>
+
+      <div id="instrucciones">
+        <p>Objetivos <br> Ultimo movimiento</p>
+        <ul id="lista-instrucciones">
+        </ul>
+      </div>
+
+      <div id="objetivo"><!-- cuadro a la izquierda del rompecabezas -->
+        <div class="texto-centrado">
+        </div>
+        <img src="./images/final.png" id="imgFinal" alt=""><!-- imagen del juego final. -->
+      </div>
+      <div id="ultimo-mov">
+        <div id="flecha" class="texto-centrado">
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="col-60"><!-- columna que ocupa el 60% -->
+      <div id="juego"><!-- tablero del rompecabezas -->
+        <!-- pieza del rompecabezas tiene que estar en un div con el ID "pieza1" de uno al 9 -->
+        <!-- conserven la misma class para darle los estilos. -->
+        <!-- piezas -->
+        <div class="piezasRompeCabezas" id="pieza1">
+          <img src="./images/10.jpg" alt=""><!-- importo las imagenes -->
+        </div>
+        <div class="piezasRompeCabezas" id="pieza2">
+          <img src="./images/20.jpg" alt=""><!-- img -->
+        </div>
+        <div class="piezasRompeCabezas" id="pieza3">
+          <img src="./images/30.jpg" alt="">
+        </div>
+        <div class="piezasRompeCabezas" id="pieza4">
+          <img src="./images/40.jpg" alt="">
+        </div>
+        <div class="piezasRompeCabezas" id="pieza5">
+          <img src="./images/50.jpg" alt="">
+        </div>
+        <div class="piezasRompeCabezas" id="pieza6">
+          <img src="./images/60.jpg" alt="">
+        </div>
+        <div class="piezasRompeCabezas" id="pieza7">
+          <img src="./images/70.jpg" alt="">
+        </div>
+        <div class="piezasRompeCabezas" id="pieza8">
+          <img src="./images/80.jpg" alt="">
+        </div>
+        <div class="piezasRompeCabezas" id="pieza9">
+          <!--  sin imagen para que quede el espacio vacio -->
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      
+    </div>
+    <script src="js/juego.js"></script>
+  </body>
+</html>
