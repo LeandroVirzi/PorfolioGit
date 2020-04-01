@@ -1,0 +1,1 @@
+export {default} from './Admin';//la exportacion por defecto de la carpeta Admin es este fichero.
