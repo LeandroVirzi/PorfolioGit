@@ -11,13 +11,15 @@ export default function LayoutAdmin(props) {
     
     return (
         <Layout>
-            <h2>Menu sider Admin</h2>
-            <Layout>
-                <Header>Header....</Header>
-                <Content>
+            {/* TO DO: Menu sider*/}
+            <Layout className="layout-admin">
+                <Header className="layout-admin__header">
+                    {/* TO DO: Menu Top */}
+                </Header>
+                <Content className="layout-admin__content">
                     <LoadRoutes routes={routes} />
                 </Content>
-                <Footer>Leandro Virzi</Footer>
+                <Footer className="layout-admin__footer">Leandro Virzi</Footer>
             </Layout>
         </Layout>
     );
