@@ -1,5 +1,7 @@
 import React from 'react';
-import { Button, Icon } from "antd";
+import { Button } from "antd";
+import { MenuOutlined, PoweroffOutlined } from '@ant-design/icons';
+
 import LeandroLogo from '../../../assets/img/png/logo-white.png';
 
 import './MenuTop.scss';
@@ -15,15 +17,17 @@ export default function MenuTop() {
                     alt="Leandro Virzi"
                 />
                 <Button type="link" onClick={() => console.log("Click. ")}>
-                    <Icon type="menu-fold"/>
+                    <MenuOutlined type="menu-fold"/>
                 </Button>
             </div>
-            <div className="menu-top__rigth">
-                <Button type="link">
-                    <Icon type="menu"/>
+            <div className="menu-top__right">
+                <Button type="link" onClick={() => console.log("Desconexion. ")}>
+                    <PoweroffOutlined type="poweroff" />
                 </Button>
             </div>
         </div>
     );
 }
+
+
 

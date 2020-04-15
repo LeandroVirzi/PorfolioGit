@@ -2,5 +2,32 @@
 
 
 .menu-top{
-    
+    display: flex;//posiciono todo en la misma linea.
+
+    button {
+        color: $font-light;
+
+        &:hover {
+            color: $primary-color;
+        }
+        &:focus,
+        &active {
+            color: $font-light;
+        }
+    }
+
+    &__left {
+        &-logo {
+            width: 200px;
+            padding: 0 10px;
+        }
+    }
+
+    &__right {
+        position: absolute;
+        right: 0;
+    }
+
+
+
 }
