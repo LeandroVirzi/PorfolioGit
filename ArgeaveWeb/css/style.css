@@ -1,0 +1,20 @@
+
+.sombreado {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fondo {
+    background: url("../img/Contacto/02.jpg");
+}
+
+.fondoProductos {
+    background: url("../img/Productos/fondo.jpeg");
+}
+
+.fondoCard {
+    background: url("../img/Productos/fondoCardVerde.jpeg");
+}
+
+.alto {
+    height: 100vh;
+}
