@@ -39,9 +39,17 @@ if (empty($_POST["mensaje"])){
 
 // CORREO ELECTRONICO
 // CUERPO DEL MENSAJE
-$cuerpo = 'Nombre: '.$nombre.'/n';
-$cuerpo .= 'E-mail :'.$email.'/n';
-$cuerpo .= 'Mensaje :'.$mensaje.'/n';
+$cuerpo .= 'Nombre: ';
+$cuerpo .= $nombre;
+$cuerpo .= '/n';
+
+$cuerpo .= 'E-mail: ';
+$cuerpo .= $email;
+$cuerpo .='/n';
+
+$cuerpo .= 'Mensaje: ';
+$cuerpo .= $mensaje;
+$cuerpo .= '/n';
 
 // DIRECCIÓN
 $enviarA = 'lean.9906@gmail.com' // Lo reemplazo con mi correo.
